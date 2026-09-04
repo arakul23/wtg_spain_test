@@ -9,6 +9,7 @@ use App\Http\Requests\ReservationRequest;
 use App\Models\Offer;
 use App\Services\ReservationService;
 use Illuminate\Http\JsonResponse;
+use App\Http\Resources\ReservationResource;
 
 class ReservationController extends Controller
 {
@@ -27,16 +28,9 @@ class ReservationController extends Controller
             ], 409);
         }
 
-        return response()->json([
-            'data' => [
-                'id' => $reservation->id,
-                'offer_id' => $reservation->offer_id,
-                'client_reference' => $reservation->client_reference,
-                'customer_name' => $reservation->customer_name,
-                'customer_email' => $reservation->customer_email,
-                'status' => $reservation->status->value,
-                'created_at' => $reservation->created_at->toIso8601String(),
-            ],
-        ], 201);
+        return (new ReservationResource($reservation))
+                ->response()
+                ->setStatusCode(202);
+                
     }
 }

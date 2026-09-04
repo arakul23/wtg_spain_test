@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Jobs;
 
-use App\Enums\Status;
+use App\Enums\ImportStatus;
 use App\Models\Import;
 use App\Models\Offer;
 use App\Models\Property;
@@ -33,17 +33,17 @@ class ProcessImportJob implements ShouldQueue
 
     public function handle(): void
     {
-        if ($this->import->status !== Status::PENDING) {
+        if ($this->import->status !== ImportStatus::PENDING) {
             return;
         }
 
-        $this->import->update(['status' => Status::PROCESSING]);
+        $this->import->update(['status' => ImportStatus::PROCESSING]);
 
         try {
             $processed = DB::transaction(fn (): int => $this->processOffers());
 
             $this->import->update([
-                'status' => Status::COMPLETED,
+                'status' => ImportStatus::COMPLETED,
                 'processed_offers' => $processed,
                 'completed_at' => now(),
             ]);

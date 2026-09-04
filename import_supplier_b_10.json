@@ -1,0 +1,157 @@
+{
+  "supplier": "supplier-b",
+  "external_import_id": "import-2026-09-04-b-10",
+  "sent_at": "2026-09-04T10:05:00Z",
+  "offers": [
+    {
+      "external_id": "offer-b-00001",
+      "property": {
+        "code": "PROP-b-00001",
+        "name": "Apartment #1 in Barcelona",
+        "city": "Barcelona"
+      },
+      "check_in": "2026-10-10",
+      "check_out": "2026-10-15",
+      "max_guests": 2,
+      "price": 71000,
+      "currency": "EUR",
+      "available_units": 1,
+      "expires_at": "2026-12-31T23:59:59Z"
+    },
+    {
+      "external_id": "offer-b-00002",
+      "property": {
+        "code": "PROP-b-00002",
+        "name": "Apartment #2 in Odesa",
+        "city": "Odesa"
+      },
+      "check_in": "2026-10-10",
+      "check_out": "2026-10-15",
+      "max_guests": 3,
+      "price": 72000,
+      "currency": "EUR",
+      "available_units": 2,
+      "expires_at": "2026-12-31T23:59:59Z"
+    },
+    {
+      "external_id": "offer-b-00003",
+      "property": {
+        "code": "PROP-b-00003",
+        "name": "Apartment #3 in Kyiv",
+        "city": "Kyiv"
+      },
+      "check_in": "2026-10-10",
+      "check_out": "2026-10-15",
+      "max_guests": 4,
+      "price": 73000,
+      "currency": "EUR",
+      "available_units": 3,
+      "expires_at": "2026-12-31T23:59:59Z"
+    },
+    {
+      "external_id": "offer-b-00004",
+      "property": {
+        "code": "PROP-b-00004",
+        "name": "Apartment #4 in Lisbon",
+        "city": "Lisbon"
+      },
+      "check_in": "2026-10-10",
+      "check_out": "2026-10-15",
+      "max_guests": 5,
+      "price": 74000,
+      "currency": "EUR",
+      "available_units": 4,
+      "expires_at": "2026-12-31T23:59:59Z"
+    },
+    {
+      "external_id": "offer-b-00005",
+      "property": {
+        "code": "PROP-b-00005",
+        "name": "Apartment #5 in Berlin",
+        "city": "Berlin"
+      },
+      "check_in": "2026-10-10",
+      "check_out": "2026-10-15",
+      "max_guests": 2,
+      "price": 75000,
+      "currency": "EUR",
+      "available_units": 5,
+      "expires_at": "2026-12-31T23:59:59Z"
+    },
+    {
+      "external_id": "offer-b-00006",
+      "property": {
+        "code": "PROP-b-00006",
+        "name": "Apartment #6 in Barcelona",
+        "city": "Barcelona"
+      },
+      "check_in": "2026-10-10",
+      "check_out": "2026-10-15",
+      "max_guests": 3,
+      "price": 76000,
+      "currency": "EUR",
+      "available_units": 1,
+      "expires_at": "2026-12-31T23:59:59Z"
+    },
+    {
+      "external_id": "offer-b-00007",
+      "property": {
+        "code": "PROP-b-00007",
+        "name": "Apartment #7 in Odesa",
+        "city": "Odesa"
+      },
+      "check_in": "2026-10-10",
+      "check_out": "2026-10-15",
+      "max_guests": 4,
+      "price": 77000,
+      "currency": "EUR",
+      "available_units": 2,
+      "expires_at": "2026-12-31T23:59:59Z"
+    },
+    {
+      "external_id": "offer-b-00008",
+      "property": {
+        "code": "PROP-b-00008",
+        "name": "Apartment #8 in Kyiv",
+        "city": "Kyiv"
+      },
+      "check_in": "2026-10-10",
+      "check_out": "2026-10-15",
+      "max_guests": 5,
+      "price": 78000,
+      "currency": "EUR",
+      "available_units": 3,
+      "expires_at": "2026-12-31T23:59:59Z"
+    },
+    {
+      "external_id": "offer-b-00009",
+      "property": {
+        "code": "PROP-b-00009",
+        "name": "Apartment #9 in Lisbon",
+        "city": "Lisbon"
+      },
+      "check_in": "2026-10-10",
+      "check_out": "2026-10-15",
+      "max_guests": 2,
+      "price": 79000,
+      "currency": "EUR",
+      "available_units": 4,
+      "expires_at": "2026-12-31T23:59:59Z"
+    },
+    {
+      "external_id": "offer-b-00010",
+      "property": {
+        "code": "PROP-b-00010",
+        "name": "Apartment #10 in Berlin",
+        "city": "Berlin"
+      },
+      "check_in": "2026-10-10",
+      "check_out": "2026-10-15",
+      "max_guests": 3,
+      "price": 80000,
+      "currency": "EUR",
+      "available_units": 5,
+      "expires_at": "2026-12-31T23:59:59Z"
+    }
+  ]
+}
