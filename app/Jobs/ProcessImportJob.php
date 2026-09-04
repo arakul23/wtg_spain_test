@@ -54,7 +54,7 @@ class ProcessImportJob implements ShouldQueue
             ]);
 
             $this->import->update([
-                'status' => Status::FAILED,
+                'status' => ImportStatus::FAILED,
                 'error' => $e->getMessage(),
                 'completed_at' => now(),
             ]);

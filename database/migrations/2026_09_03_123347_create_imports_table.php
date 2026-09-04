@@ -24,6 +24,7 @@ return new class extends Migration
             $table->text('error')->nullable();
             $table->json('payload');
             $table->timestamp('completed_at')->nullable();
+            $table->unique(['supplier_id', 'external_import_id']);
             $table->timestamps();
         });
     }

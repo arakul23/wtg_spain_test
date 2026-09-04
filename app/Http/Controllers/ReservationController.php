@@ -30,7 +30,7 @@ class ReservationController extends Controller
 
         return (new ReservationResource($reservation))
                 ->response()
-                ->setStatusCode(202);
-                
+                ->setStatusCode(201);
+
     }
 }
