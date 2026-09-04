@@ -14,6 +14,7 @@ docker compose exec php php artisan key:generate
 
 docker compose exec php php artisan migrate --seed
 ```
+Команди `docker compose exec php php artisan key:generate` і `docker compose exec php php artisan migrate --seed` можуть не виконатись одразу після збірки контейнерів, можливо потрібно буде зачекати 5-10 секунд поки виконається `composer install`
 
 Після цього API доступне на http://localhost:8080.
 
