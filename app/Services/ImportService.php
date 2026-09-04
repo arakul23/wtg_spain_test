@@ -16,7 +16,6 @@ class ImportService
     {
         $supplier = Supplier::where('code', $data['supplier'])->firstOrFail();
        
-
         $import = $this->firstOrCreateImport($supplier, $data);
 
         if ($import->wasRecentlyCreated) {
