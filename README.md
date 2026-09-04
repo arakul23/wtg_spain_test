@@ -2,7 +2,7 @@
 
 ## Клонувати репозиторій
 ```
-git clone <repo-url>
+git clone https://github.com/arakul23/wtg_spain_test
 
 cd wtg_spain_test
 
@@ -17,9 +17,9 @@ docker compose exec php php artisan migrate --seed
 
 Команда ```php artisan queue:work --tries=3 --timeout=90``` запускається в окремому контейнері, тому вручну виконувати не треба (на проді краще налаштовувати такі речі через supervisor)
 
-У .env за замовчуванням QUEUE_CONNECTION=database — Job складаються в таблицю jobs і обробляються воркером вище.
+Черги працюють через БД (Mysql).
 
-Тести використовують окрему тестову БД (DB_DATABASE з phpunit.xml), щоб не займати дані з робочої бази.
+Тести використовують окрему тестову БД (DB_DATABASE з phpunit.xml).
 
 # Ідемпотентність імпорту
 
